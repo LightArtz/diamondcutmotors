@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiamondCut Motors - Luxury Car Showroom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">DiamondCut Motors</div>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/cars.html">Cars</a></li>
+                <li><a href="/showroom.html">Showroom</a></li>
+                <li><a href="/aboutus.html">About Us</a></li>
+            </ul>
+            <a href="/login.html" class="login-btn">Login</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="video-overlay"></div>
+            <video autoplay muted loop id="hero-video">
+                <source src="/assets/home-page/hero-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-content">
+                <div class="tagline">
+                    <h1>Experience <span>Luxury</span></h1>
+                    <h1>Drive <span>Excellence</span></h1>
+                </div>
+                <p class="description">Discover the world of high-performance vehicles and unmatched elegance.</p>
+                <div class="cta-buttons">
+                    <a href="#gallery" class="btn btn-primary">Explore Now</a>
+                    <a href="/aboutus.html" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </section>        
+        
+        <section class="gallery" id="gallery">
+            <h2>Top Tier Cars</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="porsche">
+                    Porsche
+                </button>
+                <button class="filter-btn" data-filter="mercedes">
+                    Mercedes
+                </button>
+                <button class="filter-btn" data-filter="bugatti">
+                    Bugatti
+                </button>
+            </div>
+            <div class="car-gallery">
+                <div class="car-item" data-category="porsche">
+                    <img src="/assets/home-gallery/porsche-911.png" alt="Porsche 911">
+                    <h3 class="brand">Porsche</h3>
+                    <h3>911</h3>
+                    <p>$120,000</p>
+                </div>
+                <div class="car-item" data-category="mercedes">
+                    <img src="/assets/home-gallery/mercedesbenz-sclass.webp" alt="Mercedes S-Class">
+                    <h3 class="brand">Mercedes</h3>
+                    <h3>S-Class</h3>
+                    <p>$140,000</p>
+                </div>
+                <div class="car-item" data-category="bugatti">
+                    <img src="/assets/home-gallery/bugatti-chiron.jpg" alt="Bugatti Chiron">
+                    <h3 class="brand">Bugatti</h3>
+                    <h3>Chiron</h3>
+                    <p>$2,998,000</p>
+                </div>
+                <div class="car-item" data-category="porsche">
+                    <img src="/assets/home-gallery/porsche-panamera.png" alt="Porsche Panamera">
+                    <h3 class="brand">Porsche</h3>
+                    <h3>Panamera</h3>
+                    <p>$150,000</p>
+                </div>
+                <div class="car-item" data-category="mercedes">
+                    <img src="/assets/home-gallery/mercedesbenz-gwagon.png" alt="Mercedes-Benz G-Wagon">
+                    <h3 class="brand">Mercedes</h3>
+                    <h3>G-Wagon</h3>
+                    <p>$200,000</p>
+                </div>
+                <div class="car-item" data-category="bugatti">
+                    <img src="/assets/home-gallery/bugatti-veyron.png" alt="Bugatti Veyron">
+                    <h3 class="brand">Bugatti</h3>
+                    <h3>Veyron</h3>
+                    <p>$1,700,000</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about-us">
+            <h2>About Us</h2>
+            <div class="content">
+                <div class="image">
+                    <img src="/assets/home-page/showroom.webp" alt="showroom">
+                </div>
+                <div class="text">
+                    <h3>Where refinement meets performance</h3>
+                    <p>DiamondCut Motors is a prestigious car reseller that provides luxurious vehicles throughout Indonesia. It was founded in 1998 and has been growing exponentially ever since.</p>
+                    <a href="/aboutus.html" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="featured-cars">
+            <h2>Featured Cars</h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="/assets/home-slider/slider-lamborghiniaventador.png" alt="Lamborghini Aventador">
+                        <div class="car-info">
+                            <h3 class="car-name">Lamborghini Aventador</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="/assets/home-slider/slider-mclarenp1.png" alt="McLaren P1">
+                        <div class="car-info">
+                            <h3 class="car-name">McLaren P1</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="/assets/home-slider/slider-ferrariroma.png" alt="Ferrari Roma">
+                        <div class="car-info">
+                            <h3 class="car-name">Ferrari Roma</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="/assets/home-slider/koenigsegg_gemera_2021_3d_model_c4d_max_obj_fbx_ma_lwo_3ds_3dm_stl_4744871-removebg-preview.png" alt="Mercedes AMG GT">
+                        <div class="car-info">
+                            <h3 class="car-name">Mercedes AMG GT</h3>
+                        </div>
+                    </div>
+                    <div class="slide active">
+                        <img src="/assets/home-slider/slider-ferrarisf90.png" alt="Ferrari SF90">
+                        <div class="car-info">
+                            <h3 class="car-name">Ferrari SF90</h3>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn prev-btn">&lt;</button>
+                <button class="slider-btn next-btn">&gt;</button>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                    <span class="dot" data-slide="4"></span>
+                </div>
+            </div>
+        </section>
+                 
+    </main>
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>DiamondCut Motors</h2>
+            </div>
+            <div class="footer-info">
+                <div class="footer-opening-hours">
+                    <h3>Opening Hours</h3>
+                    <p>Mon - Fri: 9:00 AM - 8:00 PM</p>
+                    <p>Sat: 10:00 AM - 10:00 PM</p>
+                    <p>Sun: 10:00 AM - 8:00 PM</p>
+                </div>
+                <div class="footer-contact-us">
+                    <h3>Contact Us</h3>
+                    <p>Email: diamondcut@gmail.com</p>
+                    <p>Phone: 0812 3412 7890</p>
+                    <p>Address: Alam Sutera, Indonesia</p>
+                </div>
+                <div class="footer-social-media">
+                    <h3>Follow Us</h3>
+                    <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                        <img src="/assets/footer/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                        <img src="/assets/footer/twitter.png" alt="Twitter">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                        <img src="/assets/footer/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" class="social-icon">
+                        <img src="/assets/footer/youtube.png" alt="Youtube">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-line">
+        <p class="footer-copyright">© 2024 DiamondCut Motors. All rights reserved.</p>
+    </footer>
+    
+    <script src="/script.js"></script>
+</body>
+</html>

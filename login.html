@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiamondCut Motors - Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">DiamondCut Motors</div>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/cars.html">Cars</a></li>
+                <li><a href="/showroom.html">Showroom</a></li>
+                <li><a href="/aboutus.html">About Us</a></li>
+            </ul>
+            <a href="/login.html" class="login-btn">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login-section">
+            <div class="form-container">
+                <form id="login-form">
+                    <h2>Login</h2>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                        <small class="error-message" id="name-error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                        <small class="error-message" id="email-error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password">
+                        <small class="error-message" id="password-error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Enter your confirmation password">
+                        <small class="error-message" id="confirm-password-error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob">
+                        <small class="error-message" id="dob-error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <div class="gender-form">
+                            <div class="male">
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="female">
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+                        <small class="error-message" id="gender-error"></small> 
+                    </div>
+                    <div class="form-group">
+                        <div class="termsandconditions">
+                            <input type="checkbox" id="terms" name="terms">
+                            <label for="terms">I agree to the terms and conditions</label>
+                        </div>
+                        <small class="error-message" id="terms-error"></small>
+                    </div>
+                    <button class="login-button" type="submit">Log In</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>DiamondCut Motors</h2>
+            </div>
+            <div class="footer-info">
+                <div class="footer-opening-hours">
+                    <h3>Opening Hours</h3>
+                    <p>Mon - Fri: 9:00 AM - 8:00 PM</p>
+                    <p>Sat: 10:00 AM - 10:00 PM</p>
+                    <p>Sun: 10:00 AM - 8:00 PM</p>
+                </div>
+                <div class="footer-contact-us">
+                    <h3>Contact Us</h3>
+                    <p>Email: diamondcut@gmail.com</p>
+                    <p>Phone: 0812 3412 7890</p>
+                    <p>Address: Alam Sutera, Indonesia</p>
+                </div>
+                <div class="footer-social-media">
+                    <h3>Follow Us</h3>
+                    <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                        <img src="/assets/footer/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                        <img src="/assets/footer/twitter.png" alt="Twitter">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                        <img src="/assets/footer/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" class="social-icon">
+                        <img src="/assets/footer/youtube.png" alt="Youtube">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-line">
+        <p class="footer-copyright">© 2024 DiamondCut Motors. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

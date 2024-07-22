@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiamondCut Motors - Cars</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">DiamondCut Motors</div>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/cars.html">Cars</a></li>
+                <li><a href="/showroom.html">Showroom</a></li>
+                <li><a href="/aboutus.html">About Us</a></li>
+            </ul>
+            <a href="/login.html" class="login-btn">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="car">
+            <div class="car-filters">
+                <div class="filters-container">
+                    <div class="filter-group">
+                        <label for="brand-select">Brand</label>
+                        <select id="brand-select">
+                            <option value="all">All</option>
+                            <option value="Audi">Audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Bugatti">Bugatti</option>
+                            <option value="Ferrari">Ferrari</option>
+                            <option value="Lamborghini">Lamborghini</option>
+                            <option value="McLaren">McLaren</option>
+                            <option value="Mercedes">Mercedes</option>
+                            <option value="Porsche">Porsche</option>
+                            <option value="Rolls Royce">Rolls Royce</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Status</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" class="status-checkbox" value="new">New</label>
+                            <label><input type="checkbox" class="status-checkbox" value="used">Used</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-list">
+                <div class="search-bar">
+                    <input type="text" id="car-search" placeholder="Search by name...">
+                </div>
+                <p id="cars-found">6 cars found</p>
+                <div class="car-container">
+                    <div class="cars-item" data-brand="Audi" data-status="new">
+                        <img src="/assets/cars/audi-a8.jpg" alt="Audi A8">
+                        <div class="car-details">
+                            <h3><strong>Audi A8</strong></h3>
+                            <div class="information">
+                                <div class="information-left">
+                                    <p>Condition: New</p>
+                                    <p>Region: Germany</p>
+                                </div>
+                                <div class="information-right">
+                                    <p>Price:</p>
+                                    <p>$200,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cars-item" data-brand="Bugatti" data-status="new">
+                        <img src="/assets/cars/bugatti-chiron.jpg" alt="Bugatti Chiron">
+                        <div class="car-details">
+                            <h3><strong>Bugatti Chiron</strong></h3>
+                            <div class="information">
+                                <div class="information-left">
+                                    <p>Condition: New</p>
+                                    <p>Region: France</p>
+                                </div>
+                                <div class="information-right">
+                                    <p>Price:</p>
+                                    <p>$2,998,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cars-item" data-brand="Porsche" data-status="new">
+                        <img src="/assets/cars/porsche-911.jpg" alt="Porsche 911">
+                        <div class="car-details">
+                            <h3><strong>Porsche 911</strong></h3>
+                            <div class="information">
+                                <div class="information-left">
+                                    <p>Condition: New</p>
+                                    <p>Region: Germany</p>
+                                </div>
+                                <div class="information-right">
+                                    <p>Price:</p>
+                                    <p>$120,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cars-item" data-brand="Mercedes" data-status="used">
+                        <img src="/assets/cars/mercedes-sclass.jpg" alt="Mercedes S-Class">
+                        <div class="car-details">
+                            <h3><strong>Mercedes S-Class</strong></h3>
+                            <div class="information">
+                                <div class="information-left">
+                                    <p>Condition: Used</p>
+                                    <p>Region: Germany</p>
+                                </div>
+                                <div class="information-right">
+                                    <p>Price:</p>
+                                    <p>$140,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cars-item" data-brand="Porsche" data-status="used">
+                        <img src="/assets/cars/porsche-panamera.jpg" alt="Porsche Panamera">
+                        <div class="car-details">
+                            <h3><strong>Porsche Panamera</strong></h3>
+                            <div class="information">
+                                <div class="information-left">
+                                    <p>Condition: Used</p>
+                                    <p>Region: China</p>
+                                </div>
+                                <div class="information-right">
+                                    <p>Price:</p>
+                                    <p>$150,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cars-item" data-brand="BMW" data-status="new">
+                        <img src="/assets/cars/bmw-m3.avif" alt="BMW M3">
+                        <div class="car-details">
+                            <h3><strong>BMW M3</strong></h3>
+                            <div class="information">
+                                <div class="information-left">
+                                    <p>Condition: New</p>
+                                    <p>Region: Germany</p>
+                                </div>
+                                <div class="information-right">
+                                    <p>Price:</p>
+                                    <p>$85,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cars-item" data-brand="Audi" data-status="used">
+                        <img src="/assets/cars/audi-q8.jpg" alt="Audi Q8">
+                        <div class="car-details">
+                            <h3><strong>Audi Q8</strong></h3>
+                            <div class="information">
+                                <div class="information-left">
+                                    <p>Condition: Used</p>
+                                    <p>Region: Germany</p>
+                                </div>
+                                <div class="information-right">
+                                    <p>Price:</p>
+                                    <p>$75,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cars-item" data-brand="Mercedes" data-status="new">
+                        <img src="/assets/cars/mercedes-gwagon.jpg" alt="Mercedes G-Wagon">
+                        <div class="car-details">
+                            <h3><strong>Mercedes G-Wagon</strong></h3>
+                            <div class="information">
+                                <div class="information-left">
+                                    <p>Condition: New</p>
+                                    <p>Region: France</p>
+                                </div>
+                                <div class="information-right">
+                                    <p>Price:</p>
+                                    <p>$200,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cars-item" data-brand="Bugatti" data-status="used">
+                        <img src="/assets/cars/bugatti-veyron.jpg" alt="Bugatti Veyron">
+                        <div class="car-details">
+                            <h3><strong>Bugatti Veyron</strong></h3>
+                            <div class="information">
+                                <div class="information-left">
+                                    <p>Condition: Used</p>
+                                    <p>Region: Germany</p>
+                                </div>
+                                <div class="information-right">
+                                    <p>Price:</p>
+                                    <p>$1,700,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cars-item" data-brand="Lamborghini" data-status="new">
+                        <img src="/assets/cars/lamborghini-aventador.webp" alt="Lamborghini Aventador">
+                        <div class="car-details">
+                            <h3><strong>Lamborghini Aventador</strong></h3>
+                            <div class="information">
+                                <div class="information-left">
+                                    <p>Condition: New</p>
+                                    <p>Region: Italy</p>
+                                </div>
+                                <div class="information-right">
+                                    <p>Price:</p>
+                                    <p>$500,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cars-item" data-brand="McLaren" data-status="new">
+                        <img src="/assets/cars/mclaren-p1.jpg" alt="McLaren P1">
+                        <div class="car-details">
+                            <h3><strong>McLaren P1</strong></h3>
+                            <div class="information">
+                                <div class="information-left">
+                                    <p>Condition: New</p>
+                                    <p>Region: England</p>
+                                </div>
+                                <div class="information-right">
+                                    <p>Price:</p>
+                                    <p>$1,100,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cars-item" data-brand="Ferrari" data-status="new">
+                        <img src="/assets/cars/ferrari-roma.avif" alt="Ferrari Roma">
+                        <div class="car-details">
+                            <h3><strong>Ferrari Roma</strong></h3>
+                            <div class="information">
+                                <div class="information-left">
+                                    <p>Condition: New</p>
+                                    <p>Region: Italy</p>
+                                </div>
+                                <div class="information-right">
+                                    <p>Price:</p>
+                                    <p>$250,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cars-item" data-brand="Mercedes" data-status="new">
+                        <img src="/assets/cars/mercedes-amggt.jpg" alt="Mercedes AMG GT">
+                        <div class="car-details">
+                            <h3><strong>Mercedes AMG GT</strong></h3>
+                            <div class="information">
+                                <div class="information-left">
+                                    <p>Condition: New</p>
+                                    <p>Region: Germany</p>
+                                </div>
+                                <div class="information-right">
+                                    <p>Price:</p>
+                                    <p>$135,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cars-item" data-brand="Porsche" data-status="used">
+                        <img src="/assets/cars/porsche-macan.jpg" alt="Porsche Macan">
+                        <div class="car-details">
+                            <h3><strong>Porsche Macan</strong></h3>
+                            <div class="information">
+                                <div class="information-left">
+                                    <p>Condition: Used</p>
+                                    <p>Region: Germany</p>
+                                </div>
+                                <div class="information-right">
+                                    <p>Price:</p>
+                                    <p>$100,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cars-item" data-brand="Ferrari" data-status="used">
+                        <img src="/assets/cars/ferrari-sf90.jpg" alt="Ferrari SF90">
+                        <div class="car-details">
+                            <h3><strong>Ferarri SF90</strong></h3>
+                            <div class="information">
+                                <div class="information-left">
+                                    <p>Condition: Used</p>
+                                    <p>Region: Italy</p>
+                                </div>
+                                <div class="information-right">
+                                    <p>Price:</p>
+                                    <p>$530,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cars-item" data-brand="Lamborghini" data-status="used">
+                        <img src="/assets/cars/lamborghini-huracan.jpg" alt="Lamborghini Huracan">
+                        <div class="car-details">
+                            <h3><strong>Lamborghini Huracan</strong></h3>
+                            <div class="information">
+                                <div class="information-left">
+                                    <p>Condition: Used</p>
+                                    <p>Region: Italy</p>
+                                </div>
+                                <div class="information-right">
+                                    <p>Price:</p>
+                                    <p>$250,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cars-item" data-brand="Bugatti" data-status="new">
+                        <img src="/assets/cars/bugatti-divo.jpg" alt="Bugatti Divo">
+                        <div class="car-details">
+                            <h3><strong>Bugatti Divo</strong></h3>
+                            <div class="information">
+                                <div class="information-left">
+                                    <p>Condition: New</p>
+                                    <p>Region: Germany</p>
+                                </div>
+                                <div class="information-right">
+                                    <p>Price:</p>
+                                    <p>$5,800,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cars-item" data-brand="Rolls Royce" data-status="new">
+                        <img src="/assets/cars/rollsroyce-ghost.jpg" alt="Rolls Royce Ghost">
+                        <div class="car-details">
+                            <h3><strong>Rolls Royce Ghost</strong></h3>
+                            <div class="information">
+                                <div class="information-left">
+                                    <p>Condition: New</p>
+                                    <p>Region: England</p>
+                                </div>
+                                <div class="information-right">
+                                    <p>Price:</p>
+                                    <p>$375,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cars-item" data-brand="Porsche" data-status="new">
+                        <img src="/assets/cars/porsche-cayenne.jpg" alt="Porsche Cayenne">
+                        <div class="car-details">
+                            <h3><strong>Porsche Cayenne</strong></h3>
+                            <div class="information">
+                                <div class="information-left">
+                                    <p>Condition: New</p>
+                                    <p>Region: Germany</p>
+                                </div>
+                                <div class="information-right">
+                                    <p>Price:</p>
+                                    <p>$170,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cars-item" data-brand="Lamborghini" data-status="new">
+                        <img src="/assets/cars/lamborghini-urus.jpg" alt="Lamborghini Urus">
+                        <div class="car-details">
+                            <h3><strong>Lamborghini Urus</strong></h3>
+                            <div class="information">
+                                <div class="information-left">
+                                    <p>Condition: New</p>
+                                    <p>Region: Italy</p>
+                                </div>
+                                <div class="information-right">
+                                    <p>Price:</p>
+                                    <p>$240,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="brand-carousel">
+            <h2>Our Brands</h2>
+            <div class="logos">
+                <div class="logos-slide">
+                  <img src="/assets/cars-brand/audi.png" />
+                  <img src="/assets/cars-brand/bmw.png" />
+                  <img src="/assets/cars-brand/bugatti.png"/>
+                  <img src="/assets/cars-brand/ferrari.png"/>
+                  <img src="/assets/cars-brand/lamborghini.png"/>
+                  <img src="/assets/cars-brand/mclaren.png"/>
+                  <img src="/assets/cars-brand/mercedes.png"/>
+                  <img src="/assets/cars-brand/porsche.png"/>
+                  <img src="/assets/cars-brand/rollsroyce.png"/>
+                </div>
+          
+                <div class="logos-slide">
+                    <img src="/assets/cars-brand/audi.png" />
+                    <img src="/assets/cars-brand/bmw.png" />
+                    <img src="/assets/cars-brand/bugatti.png"/>
+                    <img src="/assets/cars-brand/ferrari.png"/>
+                    <img src="/assets/cars-brand/lamborghini.png"/>
+                    <img src="/assets/cars-brand/mclaren.png"/>
+                    <img src="/assets/cars-brand/mercedes.png"/>
+                    <img src="/assets/cars-brand/porsche.png"/>
+                    <img src="/assets/cars-brand/rollsroyce.png"/>
+                </div>
+              </div>
+        </section>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>DiamondCut Motors</h2>
+            </div>
+            <div class="footer-info">
+                <div class="footer-opening-hours">
+                    <h3>Opening Hours</h3>
+                    <p>Mon - Fri: 9:00 AM - 8:00 PM</p>
+                    <p>Sat: 10:00 AM - 10:00 PM</p>
+                    <p>Sun: 10:00 AM - 8:00 PM</p>
+                </div>
+                <div class="footer-contact-us">
+                    <h3>Contact Us</h3>
+                    <p>Email: diamondcut@gmail.com</p>
+                    <p>Phone: 0812 3412 7890</p>
+                    <p>Address: Alam Sutera, Indonesia</p>
+                </div>
+                <div class="footer-social-media">
+                    <h3>Follow Us</h3>
+                    <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                        <img src="/assets/footer/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                        <img src="/assets/footer/twitter.png" alt="Twitter">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                        <img src="/assets/footer/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" class="social-icon">
+                        <img src="/assets/footer/youtube.png" alt="Youtube">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-line">
+        <p class="footer-copyright">© 2024 DiamondCut Motors. All rights reserved.</p>
+    </footer>
+    
+    <script src="/script.js"></script>
+</body>
+</html>
